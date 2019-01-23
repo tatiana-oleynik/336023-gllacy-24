@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Татьяна Олейник](https://up.htmlacademy.ru/htmlcss/24/user/336023).
-* Наставник: `Сергей Рубец`.
+* Наставник: [Сергей Рубец] (https://htmlacademy.ru/profile/amator).
 
 ---
 
