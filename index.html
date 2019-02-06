@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -50,13 +52,13 @@
             </form>
           </li>
           <li class="basket">
-            <a href="basket.html">Корзина</a>
-            <span class="basket-state">Пусто</span>
+            <h3 class="visually-hidden">Корзина</h3>
+            <a href="basket.html">Пусто</a>
           </li>
         </ul>
       </nav>
       <p class="schedule">С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+      <p class="schedule-tel">8 812 450-25-25</p>
     </header>
     <main class="container">
       <section class="promo-slider">
@@ -168,8 +170,8 @@
         <a href="news.html" class="news-preview">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <section class="mailing">
-        <p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
           <p class="mailing-item">
             <label class="visually-hidden" for="mailing-email">Электронная почта</label>
             <input id="mailing-email" type="email" name="email" placeholder="Электронная почта">
@@ -217,7 +219,7 @@
         <li class="social-button"><a href="#">Вконтакте</a></li>
       </ul>
       <ul class="meta-list">
-        <li class="meta-item"><a href="suppliers.html">Для поставщиков</a></li>
+        <li class="meta-item"><a href="suppliers.html" class="suppliers">Для поставщиков</a></li>
         <li class="meta-item"><a href="production.html">О производстве</a></li>
         <li class="meta-item"><a href="documents.html">Наши документы</a></li>
         <li class="meta-item"><a href="standards.html">Экологические стандарты</a></li>

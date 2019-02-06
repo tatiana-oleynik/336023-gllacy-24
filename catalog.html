@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/style-catalog.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +14,7 @@
           <img src="img/logo.svg" width="160" height="72" alt="Логотип магазина по продаже мороженого 'Глэйси'">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a class="link-active" href="catalog.html">Каталог</a></li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="company.html">О Компании</a></li>
         </ul>
@@ -20,8 +22,8 @@
           <li class="search"><a href="search.html">Поиск</a></li>
           <li class="login-link"><a href="login-link.html">Вход</a></li>
           <li class="basket">
-            <a href="basket.html">Корзина</a>
-            <span class="basket-state">2 товара</span>
+            <h3 class="visually-hidden">Корзина</h3>
+            <a href="basket.html" class="not-empty">2 товара</a>
             <ul class="basket-list">
               <li class="basket-item">
                 <button class="button visually-hidden" type="button" value="Закрыть">Закрыть</button>
@@ -47,9 +49,9 @@
         </ul>
       </nav>
       <p class="schedule">С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+      <p class="schedule-tel">8 812 450-25-25</p>
     </header>
-    <main class="container">
+    <main class="container-catalog-page">
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -301,7 +303,7 @@
         <li class="social-button"><a href="#">Вконтакте</a></li>
       </ul>
       <ul class="meta-list">
-        <li class="meta-item"><a href="suppliers.html">Для поставщиков</a></li>
+        <li class="meta-item"><a href="suppliers.html" class="suppliers">Для поставщиков</a></li>
         <li class="meta-item"><a href="production.html">О производстве</a></li>
         <li class="meta-item"><a href="documents.html">Наши документы</a></li>
         <li class="meta-item"><a href="standards.html">Экологические стандарты</a></li>
