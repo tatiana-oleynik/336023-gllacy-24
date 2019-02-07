@@ -5,7 +5,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: bold;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -14,22 +13,26 @@ body {
 .site-navigation {
   line-height: 18px;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .user-navigation {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .schedule {
   font-size: 14px;
   line-height: 16px;
+  font-weight: bold;
 }
 
 .schedule-tel {
   font-size: 22px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .site-navigation,
@@ -80,6 +83,10 @@ body {
   background-image: url(../img/features-background.png);
 
   color: #323232;
+}
+
+.features-list {
+  list-style: none;
   font-weight: normal;
 }
 
@@ -87,6 +94,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  font-weight: 500;
 }
 
 .news {
@@ -97,12 +105,14 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+  font-weight: 500;
 }
 
 .news a {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  font-weight: bold;
 }
 
 .news a:hover,
@@ -119,18 +129,26 @@ body {
 .mailing-form {
   background-color: #f8f7f4;
   width: 549px;
-  height: 211px;
 }
 
 .mailing-info {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+  font-weight: normal;
 }
 
 .mailing-form .button {
   background-color: #e74a35;
   color: #fefefe;
+  font-weight: bold;
+}
+
+.mailing-item input {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #999999;
 }
 
 .meta-list {
@@ -141,7 +159,6 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: normal;
 }
 
 .meta-list a:hover,
@@ -157,10 +174,9 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #fefefe;
-  font-weight: normal;
 }
 
-.copyright-link a{
+.copyright-link a {
   color: #fefefe;
 }
 
@@ -174,14 +190,12 @@ body {
 
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
 }
 
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: normal;
 }
 
 .breadcrumbs a:hover,
@@ -193,6 +207,7 @@ body {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .catalog-list {
@@ -201,6 +216,7 @@ body {
 
 .catalog-list a {
   font-size: 16px;
+  font-weight: 500;
   line-height: 22px;
   color: #ffffff;
 }
@@ -212,11 +228,13 @@ body {
 
 .catalog-price-number {
   font-size: 45px;
+  font-weight: bold;
   line-height: 45px;
 }
 
 .catalog-price-kg {
   font-size: 30px;
+  font-weight: bold;
   line-height: 45px;
 }
 
