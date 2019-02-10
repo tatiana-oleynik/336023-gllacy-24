@@ -260,7 +260,6 @@ body {
   font-weight: bold;
 
   width: 129px;
-  border-radius: 20px;
 }
 
 .mailing-item input {
@@ -272,8 +271,11 @@ body {
   width: 368px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 10px;
+}
 
-  float: left;
+.mailing-grid {
+  display: flex;
+  justify-content: space-around;
 }
 
 .meta-list {
@@ -378,7 +380,7 @@ body {
   margin-right: 26px;
 }
 
-.catalog-item:nth-child(4n) {
+.catalog-list .grid {
   margin-right: 0;
 }
 
