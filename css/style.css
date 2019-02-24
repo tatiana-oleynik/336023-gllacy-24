@@ -1185,6 +1185,8 @@ input[type="password"]::placeholder {
 
 .map iframe {
   border: none;
+  width: 100%;
+  height: 400px;
 }
 
 .map-feedback {
@@ -1251,6 +1253,7 @@ input[type="password"]::placeholder {
   z-index: 15;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 
   width: 478px;
 
@@ -1262,6 +1265,12 @@ input[type="password"]::placeholder {
 
 .feedback-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback .feedback-info {
@@ -1358,6 +1367,24 @@ input[type="password"]::placeholder {
   cursor: pointer;
 }
 
+@keyframes bounce {
+ 0% {
+   transform: translateX(-50%) translateY(-200%);
+ }
+
+ 80% {
+   transform: translateX(-50%) translateY(-10%);
+ }
+
+ 90% {
+   transform: translateX(-50%) translateY(-30%);
+ }
+
+ 100% {
+   transform: translateX(-50%) translateY(-50%);
+ }
+}
+
 .breadcrumbs {
   display: flex;
 
@@ -1417,19 +1444,173 @@ input[type="password"]::placeholder {
   font-weight: bold;
 
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
+}
+
+.filters {
+  width: 880px;
+  margin-bottom: 37px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-sorting {
+  width: 195px;
+  margin-right: 15px;
+  margin-bottom: 18px;
+}
+
+.filter-sorting p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  padding-left: 17px;
+}
+
+.filter-sorting select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  padding: 12px 15px;
+
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  border: none;
+}
+
+.filter-sorting select:hover {
+  color: #323232;
+}
+
+.filter-sorting option {
+  color: #323232;
+}
+
+.filter-price {
+  width: 219px;
+  margin-right: 15px;
+  margin-bottom: 18px;
+}
+
+.filter-price p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  margin: 0;
+  padding: 0;
+}
+
+.filter-fat {
+  width: 420px;
+  margin-bottom: 18px;
+}
+
+.filter-fat p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  padding-left: 17px;
+}
+
+.filter-fat-radio {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  padding: 12px 15px;
+
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+}
+
+.filter-fat-radio label {
+  margin-right: 18px;
+}
+
+.filter-fillers {
+  margin-right: 15px;
+}
+
+.filter-fillers p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  padding-left: 17px;
+}
+
+.filter-fillers label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.fillers {
+  width: 673px;
+
+  padding: 12px 15px;
+
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+}
+
+.fillers label {
+  margin-right: 18px;
+}
+
+.button-filters {
+  width: 145px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  padding: 12px 15px;
+
+  background-color: rgba(255,255,255,0.2);
+  border: solid 2px #ffffff;
+  border-radius: 20px;
+}
+
+.button-filters:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.button-filters:active {
+  color: #323232;
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border: none;
 }
 
 .catalog {
   margin: 0;
   margin-bottom: 46px;
   padding: 0;
-}
-
-.catalog .catalog-item:hover {
-  background-color: rgba(255,255,255,0.2);
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
 }
 
 .catalog .catalog-list {
@@ -1488,12 +1669,26 @@ input[type="password"]::placeholder {
   margin-right: 26px;
 }
 
+.catalog-list .catalog-item:hover {
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
 .catalog-list .grid {
   margin-right: 0;
 }
 
 .catalog-image img {
   border-radius: 50%;
+}
+
+.catalog-button {
+  padding: 13px 17px;
+  text-decoration: none;
+  margin-left: 30px;
+
+  display: none;
 }
 
 .pagination-list {

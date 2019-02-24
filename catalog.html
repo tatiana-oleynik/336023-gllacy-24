@@ -134,44 +134,61 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <label for="sorting">Сортировка:</label>
-            <select id="sorting" name="sort">
-              <option value="popular">по популярности</option>
-              <option value="cheap">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-            <label for="filter-price">Цена: 100 руб. - 500 руб.</label>
-            <input type="range" id="filter-price" name="price" min="100" max="500">
+            <div class="filter-sorting">
+              <p>
+                <label for="sorting">Сортировка:</label>
+              </p>
+              <select id="sorting" name="sort">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </div>
+            <div class="filter-price">
+              <p>
+                <label for="filter-price">Цена: 100 руб. - 500 руб.</label>
+              </p>
+              <input type="range" id="filter-price" name="price" min="100" max="500">
+            </div>
             <div class="filter-fat">
-              <p class="filter-fat-title">Жирность:</p>
-              <label>
-                <input type="radio" name="fat" value="0%"> 0%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="до 10%" checked> до 10%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="до 30%"> до 30%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="выше 30%"> выше 30%
-              </label>
+              <p>Жирность:</p>
+              <div class="filter-fat-radio">
+                <label>
+                  <input type="radio" name="fat" value="0%"> 0%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="до 10%" checked> до 10%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="до 30%"> до 30%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="выше 30%"> выше 30%
+                </label>
+              </div>
             </div>
             <div class="filter-fillers">
-              <p class="filter-fillers-title">Наполнители:</p>
-              <input type="checkbox" name="chocolate" id="chocolate" checked>
-              <label for="chocolate">Шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">Сахарные присыпки</label>
-              <input type="checkbox" name="fruit" id="fruit">
-              <label for="fruit">Фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup">
-              <label for="syrup">Сиропы</label>
-              <input type="checkbox" name="jam" id="jam">
-              <label for="jam">Джемы</label>
+              <p>Наполнители:</p>
+              <div class="fillers">
+                <label for="chocolate">
+                  <input type="checkbox" name="chocolate" id="chocolate" checked> Шоколадные
+                </label>
+                <label for="sugar">
+                  <input type="checkbox" name="sugar" id="sugar" checked> Сахарные присыпки
+                </label>
+                <label for="fruit">
+                  <input type="checkbox" name="fruit" id="fruit"> Фрукты
+                </label>
+                <label for="syrup">
+                  <input type="checkbox" name="syrup" id="syrup"> Сиропы
+                </label>
+                <label for="jam">
+                  <input type="checkbox" name="jam" id="jam"> Джемы
+                </label>
+              </div>
             </div>
-            <button class="button" type="submit" value="Применить">Применить</button>
+            <button class="button-filters" type="submit" value="Применить">Применить</button>
           </form>
         </section>
         <section class="catalog">
@@ -190,6 +207,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
