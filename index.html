@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- <script src="js/form.js"></script> -->
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -232,6 +233,7 @@
         </div>
         <section class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCQkbJL2" width="1600" height="430" frameborder="1" allowfullscreen="true"></iframe>
           <div class="map-feedback">
             <div class="map-adress">
               <p class="text-small">Адрес главного офиса</p>
@@ -258,13 +260,13 @@
             </div>
             <p class="feedback-item">
               <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-              <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+              <input class="field-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?" required>
             <p>
             <p class="feedback-item">
               <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
-              <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+              <input class="field-email" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?" required>
             </p>
-            <textarea class="feedback-area" id="comment" name="comment-field" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea class="feedback-area" id="comment" name="comment-field" placeholder="Напишите что-нибудь..." required></textarea>
             <div class="feedback-button-right">
               <button class="button button-feedback" type="submit" value="Отправить">Отправить</button>
             </div>
@@ -345,5 +347,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/form.js"></script>
   </body>
 </html>
