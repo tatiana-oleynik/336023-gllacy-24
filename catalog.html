@@ -146,45 +146,78 @@
               </select>
             </div>
             <div class="filter-price">
-              <p>
-                <label for="filter-price">Цена: 100 руб. - 500 руб.</label>
-              </p>
-              <input type="range" id="filter-price" name="price" min="100" max="500">
+              <p>Цена: 100 руб. - 500 руб.</p>
+              <div class="price-range">
+                <div class="range-long"></div>
+                <div class="range-short"></div>
+                <button class="button-left" type="submit" value="Уменьшение цены"></button>
+                <button class="button-right" type="submit" value="Увеличение цены"></button>
+              </div>
             </div>
             <div class="filter-fat">
-              <p>Жирность:</p>
+              <p class="filter-fat-title">Жирность:</p>
               <div class="filter-fat-radio">
-                <label class="filter-fat-title">
-                  <input type="radio" name="fat" value="0%"> 0%
-                </label>
-                <label>
-                  <input type="radio" name="fat" value="до 10%" checked> до 10%
-                </label>
-                <label>
-                  <input type="radio" name="fat" value="до 30%"> до 30%
-                </label>
-                <label>
-                  <input type="radio" name="fat" value="выше 30%"> выше 30%
-                </label>
+                <p class="filter-fat-item">
+                  <input class="visually-hidden" id="low-fat" type="radio" name="fat" value="0%">
+                  <label for id="low-fat">0%</label>
+                  <span class="filter-fat-marked"></span>
+                </p>
+                <p class="filter-fat-item">
+                  <input class="visually-hidden" id="ten-percent-fat" type="radio" name="fat" value="до 10%" checked>
+                  <label for id="ten-percent-fat">до 10%</label>
+                  <span class="filter-fat-marked"></span>
+                </p>
+                <p class="filter-fat-item">
+                  <input class="visually-hidden" id="thirty-percent-fat" type="radio" name="fat" value="до 30%">
+                  <label for="thirty-percent-fat">до 30%</label>
+                  <span class="filter-fat-marked"></span>
+                </p>
+                <p class="filter-fat-item">
+                  <input class="visually-hidden" id="above-thirty-percent-fat" type="radio" name="fat" value="выше 30%">
+                  <label for="above-thirty-percent-fat">выше 30%</label>
+                  <span class="filter-fat-marked"></span>
+                </p>
               </div>
             </div>
             <div class="filter-fillers">
               <p>Наполнители:</p>
               <div class="fillers">
-                <label for="chocolate">
-                  <input type="checkbox" name="chocolate" id="chocolate" checked> Шоколадные
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="chocolate" checked disabled>
+                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                  </svg>
+                  Шоколадные
                 </label>
-                <label for="sugar">
-                  <input type="checkbox" name="sugar" id="sugar" checked> Сахарные присыпки
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="sugar" checked>
+                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                  </svg>
+                  Сахарные присыпки
                 </label>
-                <label for="fruit">
-                  <input type="checkbox" name="fruit" id="fruit"> Фрукты
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="fruit">
+                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  Фрукты
                 </label>
-                <label for="syrup">
-                  <input type="checkbox" name="syrup" id="syrup"> Сиропы
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="syrup">
+                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  Сиропы
                 </label>
-                <label for="jam">
-                  <input type="checkbox" name="jam" id="jam"> Джемы
+                <label class="check">
+                  <input class="visually-hidden" type="checkbox" name="jam">
+                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                      <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  Джемы
                 </label>
               </div>
             </div>
@@ -222,6 +255,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -236,6 +270,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item grid">
               <p class="catalog-image">
@@ -250,6 +285,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -264,6 +300,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с брусничным джемом</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -278,6 +315,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочно-черничное с цельными ягодами черники</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -292,6 +330,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочно-лимонное с карамельной присыпкой</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item grid">
               <p class="catalog-image">
@@ -306,6 +345,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с шоколадной стружкой</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -320,6 +360,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочно-ванильное с кусочками шоколада</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -334,6 +375,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с ментоловым сиропом</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -348,6 +390,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с кусочками черного шоколада</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item grid">
               <p class="catalog-image">
@@ -362,6 +405,7 @@
               <h3>
                 <a class="catalog-link" href="catalog-item.html">Сливочное с мятным сиропом</a>
               </h3>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
           </ul>
         </section>
