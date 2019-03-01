@@ -1792,9 +1792,13 @@ input[type="radio"]:disabled + label::before {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked  + .fillers-check {
+/* input[type="checkbox"]:checked  + .fillers-check {
   background-image: url(../img/checkbox-on.svg);
-}
+} */
+
+/* input[type="checkbox"]:checked + svg path {
+  fill: green;
+} */
 
 .button-filters {
   width: 145px;
@@ -1857,7 +1861,7 @@ input[type="checkbox"]:checked  + .fillers-check {
   margin: 0;
   padding: 0;
 
-  /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 
   text-decoration: none;
 }
