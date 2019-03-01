@@ -111,7 +111,7 @@ input[type="password"]::placeholder {
   position: relative;
 
   margin-bottom: 37px;
-  padding-top: 321px;
+  padding-top: 275px;
 
   text-align: center;
   color: #ffffff;
@@ -139,8 +139,8 @@ input[type="password"]::placeholder {
   padding: 12px 44px;
 
   font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -170,7 +170,7 @@ input[type="password"]::placeholder {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 22px;
   left: 0;
   z-index: 20;
 
@@ -234,23 +234,23 @@ input[type="password"]::placeholder {
 .main-navigation-left img {
   display: inline-block;
 
-  width: 155px;
-  height: 65px;
+  width: 153px;
+  height: 66px;
 
-  margin-right: 20px;
+  margin-right: 11px;
 }
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 675px;
+  width: 715px;
 
   line-height: 18px;
   color: #ffffff;
   font-weight: bold;
 
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -271,9 +271,10 @@ input[type="password"]::placeholder {
 }
 
 .site-navigation a {
-  margin-right: 30px;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  margin-top: 9px;
+  margin-right: 2px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-right: 13px;
   padding-left: 13px;
 }
@@ -419,10 +420,15 @@ input[type="password"]::placeholder {
   color: #ffffff;
   font-weight: 500;
 
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.user-navigation li {
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation a {
@@ -430,6 +436,10 @@ input[type="password"]::placeholder {
 
   margin-right: 10px;
   border-radius: 20px;
+}
+
+.user-navigation .basket-link {
+  margin-right: 0;
 }
 
 .user-navigation a:hover {
@@ -461,7 +471,7 @@ input[type="password"]::placeholder {
 .search-icon {
   position: absolute;
   top: 7px;
-  left: 8px;
+  left: 9px;
 }
 
 .search-item {
@@ -507,8 +517,8 @@ input[type="password"]::placeholder {
 .login-link a {
   position: relative;
 
-  padding-top: 6px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 45px;
   padding-right: 17px;
 }
@@ -627,8 +637,9 @@ input[type="password"]::placeholder {
 .basket a {
   position: relative;
 
-  padding-top: 6px;
-  padding-bottom: 7px;
+  margin-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 45px;
   padding-right: 17px;
 }
@@ -799,13 +810,18 @@ input[type="password"]::placeholder {
   color: #ffffff;
 }
 
+.schedule-wrapper {
+  text-align: right;
+}
+
 .schedule {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
 
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 0;
 }
 
 .schedule-tel {
@@ -814,10 +830,7 @@ input[type="password"]::placeholder {
   font-weight: bold;
 
   margin: 0;
-}
-
-.schedule-wrapper {
-  text-align: right;
+  padding: 0;
 }
 
 .promotion {
@@ -1370,8 +1383,8 @@ input[type="password"]::placeholder {
 .feedback .button-close {
   border: none;
   background-color: #f8f7f4;
-  padding-top: 15px;
-  padding-left: 70px;
+  margin-top: 15px;
+  margin-left: 70px;
 
   cursor: pointer;
 }
@@ -1712,6 +1725,10 @@ input[type="radio"]:checked ~ span {
   display: block;
 }
 
+input[type="radio"]:disabled ~ span {
+  background-color: #b5c4bc;
+}
+
 .filter-fat-radio label:hover::before {
   border-color: #ffffff;
   cursor: pointer;
@@ -1724,10 +1741,6 @@ input[type="radio"]:disabled + label::before {
 .filter-fat-marked:hover {
   background-color: #ffffff;
   cursor: pointer;
-}
-
-input[type="radio"]:disabled ~ span {
-  background-color: #b5c4bc;
 }
 
 .filter-fillers {
@@ -1831,6 +1844,8 @@ input[type="checkbox"]:checked  + .fillers-check {
 
 .catalog-list h3 {
   text-align: center;
+  margin: 0;
+  display: inline-block;
 }
 
 .catalog-list .catalog-link {
@@ -1839,9 +1854,26 @@ input[type="checkbox"]:checked  + .fillers-check {
   line-height: 22px;
   color: #ffffff;
 
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin: 0;
+  padding: 0;
+
+  /* border-bottom: 1px solid rgba(255,255,255,0.2); */
 
   text-decoration: none;
+}
+
+.catalog-link-aaa {
+  position: absolute;
+  z-index: 10;
+  top: 275px;
+}
+
+.catalog-link-aaa::after {
+  content: "";
+  display: block;
+
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .catalog-list .catalog-link:hover,
@@ -1853,6 +1885,13 @@ input[type="checkbox"]:checked  + .fillers-check {
 .catalog-item .catalog-price {
   position: absolute;
   top: 210px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-price-aaa {
+  z-index: 10;
 }
 
 .catalog-price .catalog-price-number {
@@ -1871,41 +1910,58 @@ input[type="checkbox"]:checked  + .fillers-check {
   position: relative;
   width: 267px;
 
+  margin: 0;
   margin-bottom: 34px;
   margin-right: 26px;
+  padding: 0;
 }
-
-/* .catalog-list .catalog-item:hover {
-  background-color: rgba(255,255,255,0.2);
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-} */
 
 .catalog-list .grid {
   margin-right: 0;
+}
+
+.catalog-image {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-image img {
   border-radius: 50%;
 }
 
+.catalog-image a {
+  margin: 0;
+  padding: 0;
+}
+
+.aaa img {
+  position: absolute;
+  z-index: 10;
+}
+
 .catalog-button {
   position: absolute;
   left: 35px;
+  z-index: 10;
 
   padding: 13px 17px;
+  margin-top: 12px;
 
   text-decoration: none;
 
   display: none;
 }
 
+.catalog-button-aaa {
+  bottom: -60px;
+}
+
 .catalog-list li::after {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: -305px;
+  top: -10px;
+  left: -12px;
 
   width: 293px;
   height: 405px;
@@ -1917,7 +1973,12 @@ input[type="checkbox"]:checked  + .fillers-check {
   display: none;
 }
 
-.catalog-list li:hover + li::after{
+.catalog-list li:hover::after {
+  display: block;
+  z-index: 1;
+}
+
+.catalog-item:hover .catalog-button {
   display: block;
 }
 
