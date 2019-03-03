@@ -159,12 +159,12 @@
               <div class="filter-fat-radio">
                 <p class="filter-fat-item">
                   <input class="visually-hidden" id="low-fat" type="radio" name="fat" value="0%">
-                  <label for id="low-fat">0%</label>
+                  <label for="low-fat">0%</label>
                   <span class="filter-fat-marked"></span>
                 </p>
                 <p class="filter-fat-item">
                   <input class="visually-hidden" id="ten-percent-fat" type="radio" name="fat" value="до 10%" checked>
-                  <label for id="ten-percent-fat">до 10%</label>
+                  <label for="ten-percent-fat">до 10%</label>
                   <span class="filter-fat-marked"></span>
                 </p>
                 <p class="filter-fat-item">
@@ -182,38 +182,58 @@
             <div class="filter-fillers">
               <p>Наполнители:</p>
               <div class="fillers">
-                <label>
+                <label class="fillers-title">
                   <input class="visually-hidden" type="checkbox" name="chocolate" checked>
-                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                       <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                   </svg>
                   Шоколадные
                 </label>
-                <label>
+                <label class="fillers-title">
                   <input class="visually-hidden" type="checkbox" name="sugar" checked>
-                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                       <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                   </svg>
                   Сахарные присыпки
                 </label>
-                <label>
+                <label class="fillers-title">
                   <input class="visually-hidden" type="checkbox" name="fruit">
-                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                       <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                   </svg>
                   Фрукты
                 </label>
-                <label>
+                <label class="fillers-title">
                   <input class="visually-hidden" type="checkbox" name="syrup">
-                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                       <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                   </svg>
                   Сиропы
                 </label>
-                <label class="check">
+                <label class="fillers-title">
                   <input class="visually-hidden" type="checkbox" name="jam">
-                  <svg class="fillers-check" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                       <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                      <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                   </svg>
                   Джемы
                 </label>
@@ -227,18 +247,18 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <p class="catalog-image">
-                <a class="aaa" href="catalog-item.html">
+                <a href="catalog-item.html">
                   <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </a>
               </p>
-              <p class="catalog-price catalog-price-aaa">
+              <p class="catalog-price">
                 <span class="catalog-price-number">310₽</span>
                 <span class="catalog-price-kg">/кг</span>
               </p>
               <h3>
-                <a class="catalog-link catalog-link-aaa" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a class="catalog-link" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </h3>
-              <a class="button catalog-button catalog-button-aaa" href="product.html">Быстрый просмотр</a>
+              <a class="button catalog-button" href="product.html">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
               <p class="catalog-image">
@@ -483,20 +503,22 @@
                   </a>
                 </li>
             </ul>
-            <ul class="meta-list">
-              <li>
+            <section class="footer-info">
+              <p>
                 <a class="suppliers" href="suppliers.html">Для поставщиков</a>
-              </li>
-              <li>
-                <a href="documents.html">Наши документы</a>
-              </li>
-              <li>
+              </p>
+              <p>
                 <a href="production.html">О производстве</a>
-              </li>
-              <li>
+              </p>
+            </section>
+            <section class="footer-documents">
+              <p>
+                <a href="documents.html">Наши документы</a>
+              </p>
+              <p>
                 <a href="standards.html">Экологические стандарты</a>
-              </li>
-            </ul>
+              </p>
+            </section>
             <div class="footer-copyright">
               <a class="logo-htmlacademy" href="https://htmlacademy.ru">
                 <img src="img/logo-htmlacademy.svg" width="113" height="40" alt="Логотип HTML Academy">
