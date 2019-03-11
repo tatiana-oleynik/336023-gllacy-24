@@ -451,6 +451,7 @@ input[type="password"]::placeholder {
 }
 
 .catalog-new-list .catalog-new-active {
+  color: #ffffff;
   background-color: #d07058;
 }
 
@@ -1050,7 +1051,6 @@ input[type="password"]::placeholder {
   border-radius: 15px;
   background-color: #eddcbe;
   background-image: url(../img/features-background.png);
-  background-repeat: no-repeat;
 }
 
 .features-list {
